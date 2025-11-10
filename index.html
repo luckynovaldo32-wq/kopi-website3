@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kopi Nusantara Trading — Global Coffee Trader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav" role="banner">
+    <div class="container nav-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="Logo Kopi Nusantara" class="logo" />
+        <div class="brand-text">
+          <span class="brand-title">Alfa Asia Global</span></span>
+          <small class="brand-sub">Coffee Trading Company</small>
+        </div>
+      </div>
+
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#overview">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="navToggle" class="nav-toggle" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    </div>
+    <!-- Mobile menu (hidden on desktop) -->
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="#home">Home</a>
+      <a href="#overview">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO with slideshow -->
+  <main>
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="slideshow" aria-hidden="false">
+        <div class="slide" style="background-image:url('images/hero1.jpg')" data-index="0"></div>
+        <div class="slide" style="background-image:url('images/hero2.jpg')" data-index="1"></div>
+        <div class="slide" style="background-image:url('images/hero3.jpg')" data-index="2"></div>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <h1 id="hero-title">Connecting Indonesian Coffee to the World</h1>
+          <p class="hero-sub">Traceable origin, specialty-grade lots, and trusted logistics — kami menghubungkan petani lokal dengan pembeli internasional.</p>
+          <div class="hero-ctas">
+            <a href="#products" class="btn">Lihat Produk</a>
+            <a href="#overview" class="btn-outline">Company Overview</a>
+          </div>
+        </div>
+
+        <div class="hero-meta" aria-hidden="true">
+          <div class="hero-card">
+            <h4>Quality Control</h4>
+            <p>Standar internasional & cupping test</p>
+          </div>
+          <div class="hero-card">
+            <h4>Traceability</h4>
+            <p>Asal biji tercatat</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTEGRITY / VALUES -->
+    <section class="integrity container" id="values" aria-labelledby="values-title">
+      <div class="integrity-left">
+        <h2 id="values-title">Integrity in Every Shipment</h2>
+        <p>Kami percaya setiap pengiriman menuntut komitmen — kualitas, transparansi, dan layanan logistik yang andal.</p>
+      </div>
+      <div class="integrity-right">
+        <div class="feature"><strong>Export Supply Expertise</strong></div>
+        <div class="feature"><strong>Trusted Exporter</strong></div>
+        <div class="feature"><strong>Global Market Insight</strong></div>
+        <div class="feature"><strong>Product Quality Assurance</strong></div>
+      </div>
+    </section>
+
+    <!-- COMPANY OVERVIEW with map & pin on Riau -->
+    <section id="overview" class="company-overview container" aria-labelledby="overview-title">
+      <h2 id="overview-title">Company Overview</h2>
+
+      <div class="map-wrapper">
+        <img src="images/indonesia-map-black.png" alt="Peta Indonesia" class="indo-map" />
+        <div class="pin" aria-hidden="true"></div>
+        <div class="pin-line" aria-hidden="true"></div>
+        <div class="map-label" aria-hidden="true">Riau — Operational Hub</div>
+      </div>
+
+      <p class="overview-text">
+        <strong>Kopi Nusantara Trading</strong> adalah perusahaan trading dan eksportir kopi yang berbasis operasional di <strong>Riau, Sumatra</strong>.
+        Kami mengedepankan traceability, quality control, dan keberlanjutan dalam setiap tahap — dari lapangan hingga pengiriman internasional.
+      </p>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="products container" aria-labelledby="products-title">
+      <h2 id="products-title">Our Products</h2>
+      <p class="muted">Specialty & commercial lots — samples available upon request.</p>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="images/hero2.jpg" alt="Arabica Gayo" loading="lazy" />
+          <div class="product-body">
+            <h3>Arabica Gayo</h3>
+            <p class="meta">Aceh · Washed · 60kg</p>
+            <p class="desc">Floral, balanced acidity — specialty export lots.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/hero3.jpg" alt="Robusta Lampung" loading="lazy" />
+          <div class="product-body">
+            <h3>Robusta Lampung</h3>
+            <p class="meta">Lampung · Natural · 60kg</p>
+            <p class="desc">Full body, chocolate notes — ideal for blends.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/vanilla.jpg" alt="Nusantara Blend" loading="lazy" />
+          <div class="product-body">
+            <h3>Nusantara Blend</h3>
+            <p class="meta">Blend · Commercial export</p>
+            <p class="desc">Consistent roast profile for commercial roasters.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  <!-- LEGAL COMPLIANCE SECTION -->
+<section id="legal" class="legal-status container">
+  <h2>Company Legal Compliance</h2>
+  <div class="logos">
+    <img src="images/logo-kemenkumham.png" alt="Kementerian Hukum & HAM RI" class="logo-legal">
+    <img src="images/logo-beacukai.png" alt="Direktorat Jenderal Bea dan Cukai RI" class="logo-legal">
+    <img src="images/logo-kemendag.png" alt="Kementerian Perdagangan RI" class="logo-legal">
+  </div>
+  <p class="legal-text">
+    PT Alfa Asia Global is a legally registered and verified export company under the supervision of the
+    <b>Ministry of Law and Human Rights</b>, <b>Directorate General of Customs and Excise</b>, and
+    <b>Ministry of Trade of the Republic of Indonesia</b>.
+  </p>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+  <div class="footer-container">
+    <!-- Kolom kiri: Logo -->
+    <div class="footer-col footer-left">
+      <img src="images/logo.png" alt="Kopi Nusantara Logo" class="footer-logo">
+    </div>
+
+    <!-- Kolom tengah: Section dan Alamat -->
+    <div class="footer-col footer-center">
+      <h3>Our Company</h3>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Our Products</a></li>
+        <li><a href="#overview">Company Overview</a></li>
+      </ul>
+
+      <h3>Address</h3>
+      <p>
+        PT. Kopi Nusantara Trading<br>
+        Jl. Soekarno-Hatta No. 88<br>
+        Pekanbaru, Riau, Indonesia 28294<br>
+        NPWP: 01.234.567.8-999.000
+      </p>
+    </div>
+
+    <!-- Kolom kanan: Kontak & Order -->
+    <div class="footer-col footer-right">
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/6281234567890" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <a href="#order" class="order-btn">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Kopi Nusantara Trading. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Animasi Scroll -->
+<script>
+  const footer = document.querySelector('.footer');
+  window.addEventListener('scroll', () => {
+    const footerTop = footer.getBoundingClientRect().top;
+    if (footerTop < window.innerHeight - 50) {
+      footer.classList.add('footer-visible');
+    }
+  });
+</script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
